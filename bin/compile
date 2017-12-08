@@ -35,11 +35,7 @@ else
   cat >$BUILD_DIR/instana-agent/etc/instana/configuration.yaml <<EOF
 com.instana.plugin.host:
   tags:
-    - 'env:stage'
-    - 'solution:heroku'
-    - 'app:instana-on-heroku'
-    - 'datacenter:heroku'
-    - 'group=heroku-stage'
+    - 'Heroku'
 EOF
 
   topic "Adding Instana to startup"
